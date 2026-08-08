@@ -1,0 +1,1 @@
+export default function TodoFilters({ filter, setFilter }) { return <div className="filters">{[['all', 'Todas'], ['pending', 'Pendentes'], ['done', 'Concluídas']].map(([key, label]) => <button className={filter === key ? 'active' : ''} onClick={() => setFilter(key)} key={key}>{label}</button>)}</div>; }
